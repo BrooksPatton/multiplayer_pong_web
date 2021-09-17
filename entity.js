@@ -6,6 +6,7 @@ class Entity {
     }
 
     draw() {
+        alert('entity draw');
         this.drawSystem.draw(this);
     }
 }
