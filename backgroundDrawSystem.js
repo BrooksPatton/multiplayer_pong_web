@@ -1,7 +1,7 @@
 class BackgroundDrawSystem {
     draw(entity) {
-        stroke(255);
         strokeWeight(5);
+        stroke(255);
         rect(0, 0, entity.width, entity.height);
     }
 }
