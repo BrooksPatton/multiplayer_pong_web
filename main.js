@@ -1,9 +1,9 @@
-let background;
+let backgroundEntity;
 
 function setup() {
     createCanvas(1300, 800);
     try {
-        background = new Entity(width, height, new BackgroundDrawSystem());
+        backgroundEntity = new Entity(width, height, new BackgroundDrawSystem());
     } catch(error) {
         alert(error.message);
     }
@@ -12,7 +12,7 @@ function setup() {
 function draw() {
     try {
         background(220);
-        background.draw();
+        backgroundEntity.draw();
     } catch(error) {
         alert(error.message);
     }
